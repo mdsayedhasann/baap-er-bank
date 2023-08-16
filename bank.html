@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baap er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container w-[800px] mx-auto">
+      <h1 class="text-5xl text-center my-10">
+        WELCOME TO
+        <span class="font-semibold text-violet-700">BAAP ER BANK</span>
+      </h1>
+      <section class="flex gap-8 my-9">
+        <!-- Deposit  -->
+        <div class="deposit bg-emerald-400 w-64 text-center py-10 px-12">
+          <h2 class="text-white font-semibold text-xl">Deposit</h2>
+          <h2  class="text-white font-semibold text-xl">$<span id="deposit-total">0</span></h2>
+        </div>
+
+        <!-- Withdraw -->
+        <div class="withdraw bg-pink-700 w-64 text-center py-10 px-12">
+          <h2 class="text-white font-semibold text-xl">Withdraw</h2>
+          <h2 class="text-white font-semibold text-xl">$<span id="withdraw-total">0</span></h2>
+        </div>
+
+        <!-- Balance -->
+        <div class="balance bg-amber-600 w-64 text-center py-10 px-12">
+          <h2 class="text-white font-semibold text-xl">Balance</h2>
+          <h2 class="text-white font-semibold text-xl">$<span id="balance">1240</span></h2>
+        </div>
+      </section>
+
+      <section class="flex gap-8 my-9">
+        <div class="bg-indigo-500 w-[50%] py-10 px-12">
+          <h2 class="text-white font-semibold text-xl">Please Deposit</h2>
+
+          <!-- Deposit Form -->
+          <input
+            class="my-5 w-[100%] p-2"
+            type="text"
+            placeholder="Enter amount you want to deposit"
+            id="input-deposit"
+          />
+          <button class="text-white bg-blue-900 py-3 px-5" id="btn-deposit">
+            Deposit
+          </button>
+        </div>
+
+        <div class="bg-indigo-400 w-[50%] py-10 px-12">
+          <h2 class="text-white font-semibold text-xl">Please Withdraw</h2>
+
+          <!-- WithDraw Form -->
+          <input
+          id="input-withdraw"
+            class="my-5 w-[100%] p-2"
+            type="number"
+            placeholder="Enter amount you want to Withdraw"
+          />
+          <button class="text-white bg-blue-900 py-3 px-5" id="btn-withdraw">
+            Withdraw
+          </button>
+        </div>
+      </section>
+    </main>
+
+<script src="./js/deposit.js"></script>
+  </body>
+</html>
