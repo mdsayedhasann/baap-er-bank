@@ -22,7 +22,7 @@ btnDeposit.addEventListener("click", function () {
 
 
 /**
- * WithDraw Part
+ * WithDraw Part Start 
  */
 
 const withdrawBtn = document.getElementById('btn-withdraw');
@@ -47,7 +47,8 @@ withdrawBtn.addEventListener('click', function () {
     if (withdrawAmount <= balanceAmount) {
         withdrawTotal.innerText = parseInt(withdrawAmount) + parseInt(withdrawTotalAmount);
         // Total Balance 
-        balance.innerText = parseInt(balanceAmount) - parseInt(withdrawAmount) 
+        balance.innerText = parseInt(balanceAmount) - parseInt(withdrawAmount);
+        inputWithdraw.value = ''
     }else{
         alert('You can withdraw less than Balance Value')
     }
